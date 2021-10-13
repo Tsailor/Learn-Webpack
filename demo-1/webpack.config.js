@@ -8,15 +8,8 @@ module.exports = {
   //     print: "./src/print.js",
   //   },
   entry: {
-    index: {
-      import: "./src/index.js",
-      dependOn: "shared",
-    },
-    another: {
-      import: "./src/another.js",
-      dependOn: "shared",
-    },
-    shared: "lodash",
+    index: './src/index.js',
+    another: './src/another.js',
   },
   output: {
     filename: "[name].bundle.js",
